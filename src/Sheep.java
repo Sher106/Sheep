@@ -3,6 +3,7 @@
 //
 // Demonstrates the translation of a set of shapes.
 //************************************************************************************
+//JavaFX used to create the design of the application
 
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -10,6 +11,9 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
+
+// class used to create objects
+
 public class Sheep extends Application
 {
     //
@@ -97,3 +101,7 @@ public class Sheep extends Application
      primaryStage.show();
     }
 }
+//Inspiration for the type of scene, was the snowman's basic parts from class.
+//Java methods was used to make the project easier. That way when running the code parts
+//that were pre-programmed made the steps of inputting faster. So, the codes used to
+//expose object behavior.
