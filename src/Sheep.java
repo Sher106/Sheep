@@ -21,6 +21,11 @@ public class Sheep extends Application
     //
     public void start (Stage primaryStage)
     {
+     //Shep Fur - Body
+     Circle Coat0 = new Circle ( 80, 20,40, Color.WHITE);
+     Circle Coat1 = new Circle (120, 20, 40, Color.WHITE);
+     Group Coat = new Group (Coat0, Coat1);
+
      // Sheep Body
 
      Ellipse Body = new Ellipse( 90, 50, 80, 60);
@@ -72,14 +77,19 @@ public class Sheep extends Application
 
      //Entire Sheep Body
 
-     Group Sheep = new Group(Body, Fur, Head, Ear, Tail, Eye, Mouth, Foot1, Foot2, Foot3, Foot4);
+     Group Sheep = new Group ( Coat, Body, Fur, Head, Ear, Tail, Eye, Mouth, Foot1, Foot2, Foot3, Foot4);
      Sheep.setTranslateX(90);
      Sheep.setTranslateY(130);
 
      //Sun
 
-     Circle Sun = new Circle(400,50,30);
-     Sun.setFill(Color.GOLD);
+     Circle S0 = new Circle(400,50,33);
+     Rectangle S1 = new Rectangle(380, 20, 40, 60);
+     Rectangle S2 = new Rectangle ( 370, 30, 60, 40);
+     S0.setFill (Color.GOLD);
+     S1.setFill (Color.GOLD);
+     S2.setFill (Color.GOLD);
+     Group Sun = new Group (S2, S1, S0);
 
      //Tree Trunk and Leaf
 
